@@ -16,4 +16,4 @@ TARGET_DIR="~/shift-pro-coding/lessons"
 SHIFT_ALIAS="alias 'shift-cd'='cd $TARGET_DIR'"
 
 append_alias "shift-cd" "${SHIFT_ALIAS}"
-append_alias "python" "alias python='python3"
+append_alias "python" "alias python='python3'"
