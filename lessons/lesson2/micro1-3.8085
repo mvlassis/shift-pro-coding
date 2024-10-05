@@ -1,0 +1,44 @@
+; Written by: Emmanouil Vlassis & Panagiotis Papadeas
+; Set 1, problem 3
+; Chrisimopoioume Greeklish giati oi ellinikoi charaktires emfanizontai
+; os erotimatika sto mLab otan anoigoume deuteri fora to archeio
+
+		MVI B,03H ; Archikopoiisi B-C me 1000 gia tin entoli DELB
+		MVI C,E8H
+		MVI L,00H ; Apothikeusi 2000H ston H-L
+		MVI H,30H ; Epeidi i MOV M einai grigoroteri apo tin STA
+START:	MVI D,FFH ; Counter gia tis dekades, thelei kathe fora archikopoiisi	
+		LDA 2000H
+		CPI C8H
+		JNC LARGE ; An CY = 0 o arithmos einai >= 200
+		CPI 64H
+		JNC MID   ; An CY = 0 o arithmos einai >= 100 (kai < 200)
+DEKA:	INR D
+		SUI 0AH	; Allepallipes afaireseis me to 10
+		JNC DEKA
+		ADI 0AH   ; Diorthosi arnitikou ypoloipou
+		MOV E,A	; Dekades sto A, monades sto E
+		MOV A,D
+		RLC		; Oi dekades pigainoun sta 4 MSB
+		RLC
+		RLC
+		RLC
+		ORA E	; Dekades sta 4 MSB, monades sta 4 LSB
+		CMA		; Antistrofi logiki ton LED
+		MOV M,A
+		JMP START
+LARGE:	MVI A,0FH
+		MOV M,A
+		CALL DELB
+		MVI A,FFH
+		MOV M,A
+		CALL DELB
+		JMP START
+MID:		MVI A,FFH
+		MOV M,A
+		CALL DELB
+		MVI A,F0H
+		MOV M,A
+		CALL DELB
+		JMP START
+END
