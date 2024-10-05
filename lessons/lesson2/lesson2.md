@@ -1,15 +1,16 @@
 # Μάθημα 2:
 
 ## Python
-- Γλώσσα προγραμματισμού υψηλού επιπέδου.
+- Γλώσσα προγραμματισμού υψηλού επιπέδου. Δημιουργήθηκε το *1991*.
 Q: Ποια γλώσσα είναι χαμηλού επιπέδου;
 - [Πολύ δημοφιλής](https://www.tiobe.com/tiobe-index/)
 - Από πού παίρνει το όνομά της;
 [Από εδώ](https://www.youtube.com/watch?v=4HB7zqP9QNo)
-
+	
 ## Ubuntu
 - Λειτουργικό σύστημα βασισμένο στον πυρήνα Linux. Λέγεται και Linux Distribution.
 ### Q: Τι είναι το λειτουργικό σύστημα;
+A: Πρόγραμμα που **ελέγχει** τα άλλα προγράμματα
 - Market share: https://gs.statcounter.com/os-market-share/desktop/worldwide
 
 ## Terminal - Εντολές
