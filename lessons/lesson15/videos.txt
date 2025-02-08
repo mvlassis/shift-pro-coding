@@ -1,0 +1,11 @@
+- Early programming - Crash course
+https://www.youtube.com/watch?v=nwDq4adJwzM&t=260s
+
+- Programming with punch cards
+https://www.youtube.com/watch?v=YnnGbcM-H8c
+
+- What is a microcontroller?
+https://www.youtube.com/watch?v=1ENiVwk8idM
+
+- What is an Arduino?
+https://www.youtube.com/watch?v=1ENiVwk8idM
