@@ -17,3 +17,4 @@ This folder contains all projects covered in the 2nd section of the Shift Pro Co
 - `ultrasonic_LCD`: Detect distance from ultrasonic sensor and show it on the LCD screen.
 - `ultrasonic_LCD_button`: Detect distance from ultrasonic sensor whenever the button is pressed, and show it on the LCD screen.
 - `ultrasonic_LCD_button_buzzer`: Detect distance from ultrasonic sensor whenever the button is pressed, and show it on the LCD screen. Beep whenever the distance is below a threshold.
+- `analog-slider`: Show a progress bar depending on how far we have turned the potentiometer knob. Turn the LED on above a certain threshold, tone the buzzer below it.
